@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo/index",
+    "pages/ota/index",
+    "pages/connect/connect",
+    "pages/setting/setting",
+    "pages/wifiConfig/wifiConfig"
+  ],
+  "plugins": {
+    "LSDevicePlugin": {
+      "version": "2.0.8",
+      "provider": "wx43b1ab446b5db1e0"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

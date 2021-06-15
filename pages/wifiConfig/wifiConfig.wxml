@@ -1,0 +1,23 @@
+<!--pages/wifiConfig/wifiConfig.wxml-->
+<view class='page'>
+<button class="btn" bindtap="reConnect">重连</button>
+<button class="btn" bindtap="scanWifi">wifi列表</button>
+
+
+<scroll-view class="scan-list" scroll-y="true" enable-flex="true">
+    <view wx:for="{{wifiDatas}}" wx:for-item="item" wx:key="unique">
+      <view class='list-group' data-text="{{item}}" >
+        <!-- name & address layout -->
+        <view class='list-right'>
+          <view class='title'>{{item.ssid}}</view>
+          <input placeholder="请输入密码" class="" bindinput="inputPassword" />
+          <button class="btn" bindtap="connetWifi" data-text="{{item}}">连接</button>
+        </view>
+      </view>
+      <!-- space -->
+      <view style='wight:100%;height:10rpx;  background: white'></view>
+    </view>
+  </scroll-view>
+
+</view>
+
